@@ -1,0 +1,45 @@
+h1{
+	text-align: left;
+    margin-left: 1em;
+}
+header{
+	margin-left: 1em;
+	margin-right: 1em;
+}
+ul{
+	display: block;
+}
+ul li{
+	text-align: left;
+	display: inline-block;
+	margin-left: 0.5em;
+	width: auto;
+}
+legend{
+	text-align: left;
+	margin-left: 10em;
+}
+form{
+	padding-top: 1em;
+	padding-top: 1em;
+    width: 50%;
+    margin: 0;
+}
+label{
+	display: inline-block;
+	width: 10em;
+}
+input{
+	width: 50%;
+}
+.divInputs{
+	display: flex;
+}
+.buttonActions{
+    display: block;
+    text-align: left;
+}
+button:hover{
+	cursor: pointer;
+	background-color: #303F9F;
+}

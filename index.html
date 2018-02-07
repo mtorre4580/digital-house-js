@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PRESTAMOS.COM</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="css/style_mobile.css">
+	    <link rel="stylesheet" href="css/style_desktop.css" media="screen and (min-width: 900px)"/>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>PRESTAMOS.COM</h1>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">INICIO</a>
+					</li>
+					<li class="active">
+						<a href="#">CÁLCULO DE PRESTAMOS</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h2>Cálculo de préstamos</h2>
+			<p>Cálculo de prestamos - Para el cálculo de prestamos, esta calculadora le permite </br>
+			   calcular la cuota mensual a pagar en su préstamo, así como el total de intereses.
+			</p>
+		 	<form>
+			 	<fieldset>
+				    <legend>Cálculo de préstamos</legend>
+				    <div class="divInputs">
+				    	<label>Importe</label>
+				    	<input name="importe" type="number" required min="1"/>
+				    </div>
+				    <div class="divInputs">
+					    <label>Provincia</label>
+					  	<select name="provincia" id="provinciasSelect"></select>
+				  	</div>
+				  	<div class="divInputs">
+					  	<label>Taza de interés</label>
+					  	<input name="interes" type="number" required min="1" max="100"/>
+				  	</div>
+				  	<div class="buttonActions">
+				  		<button type="submit">CALCULAR</button>
+				  		<button type="reset">BORRAR</button>
+				  	</div>
+				  	<div class="divInputs">
+					  	<label>Cuota mensual</label>
+					  	<input disabled name="cuotaMensual" type="number" />
+				  	</div>
+				  	<div class="divInputs">
+					  	<label>Total a pagar</label>
+					  	<input disabled name="totalAPagar" type="number" />
+					</div>
+		  		</fieldset>
+		 	</form>
+		</main>
+	</body>
+</html>
